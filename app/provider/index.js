@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { storeContext } from "../context";
 
-StoreProvider = ({ children }) => {
+const StoreProvider = ({ children }) => {
   const [cartData, setCartData] = useState([]);
 
   return (
