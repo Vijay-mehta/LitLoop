@@ -55,7 +55,7 @@ export const users = [
       "genre": "Children",
       "pages": 128,
       "isRented": false,
-      "stock": 12,
+      "stock": 0,
       "rentPrice": 10,
       "sellPrice": 100,
       "sold": 15,
