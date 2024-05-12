@@ -7,22 +7,22 @@ import Image from "next/image";
 import AddToCart from "./AddToCart";
 
 const BookCard = ({ book }) => {
-  console.log(book);
+
   return (
-    <div className=" flex  flex-col  text-black   items-center">
+    <div className=" flex  flex-col  text-black   items-center  p-3">
       <h className=" text-black mb-2">{book.title}</h>
       <div className=" flex justify-center">
         <Image
           src={book.cover}
           height={200}
           width={200}
-          className="rounded-md"
+          className="rounded-md  h-[250px]"
         />
       </div>
-      <div className=" flex mt-2  ">
+      <div className="flex mt-2">
         {book.stock ? (
           <>
-            <div className=" flex ">
+            <div className="flex">
               <CheckCircleIcon className="h-5 w-5 text-green-500" />
               <p >{book.stock} in stock</p>
             </div>
@@ -34,7 +34,7 @@ const BookCard = ({ book }) => {
           </div>
         )}
 
-        <div className=" flex">
+        <div className=" flex ">
           <CurrencyRupeeIcon className="h-5 w-5"/>
           <p>{book.sellPrice} to buy</p>
         </div>
