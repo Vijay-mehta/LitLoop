@@ -1,4 +1,5 @@
 import SideBar from "../Ui/sidebar/SideBar";
+import StoreProvider from "../provider";
 
 export const metadata = {
   title: "Buy or Rent Book",
@@ -7,9 +8,11 @@ export const metadata = {
 
 export default function BookStoreLayout({ children }) {
   return (
+    <StoreProvider>
     <div className=" sm:flex  p-2">
         <SideBar/>
       {children}
     </div>
+    </StoreProvider>
   );
 }
