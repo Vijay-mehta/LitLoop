@@ -41,7 +41,7 @@ const NavLink = () => {
     {links.map((link) => {
         const IconShow = link.icon;
         return (
-          <div className=" sm:flex  text-black ">  
+          <div key={link.id} className=" sm:flex  text-black ">  
            <Link
           key={link.name}
           href={link.href}
