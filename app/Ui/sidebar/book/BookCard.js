@@ -19,6 +19,7 @@ const BookCard = ({ book }) => {
           height={200}
           width={200}
           className="rounded-md  h-[250px]"
+          alt="product image"
         />
       </div>
 

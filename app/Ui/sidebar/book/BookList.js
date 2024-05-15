@@ -1,10 +1,5 @@
-const { default: BookCard } = require("./BookCard");
-import {
-    CheckCircleIcon,
-    XCircleIcon,
-    CurrencyRupeeIcon,
-    HeartIcon,
-  } from "@heroicons/react/24/solid";
+import BookCard from "./BookCard";
+
 const BookList = ({ book }) => {
   return (
     <div className=" grid  grid-cols-1 lg:grid-cols-4 gap-4  w-full  text-black">
