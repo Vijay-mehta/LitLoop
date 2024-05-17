@@ -52,7 +52,7 @@ const NavLink = () => {
           {(link.name === 'Cart' && cartData && cartData.length >0)?
            <>
             <p className="hidden md:block">{`${link.name} (${cartData.length})`}</p> 
-           <p className="hidden sm:block">{cartData.length}</p>
+           {/* <p className="hidden sm:block">{cartData.length}</p> */}
        </> :
     <p className="hidden md:block">{link.name}</p>
 }
