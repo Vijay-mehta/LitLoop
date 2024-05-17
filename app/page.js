@@ -5,16 +5,16 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 export default function Home() {
   return (
     <div className=" flex justify-center items-center h-screen">
-      <Image 
-      src="/home/bg-image.jpg" 
-      alt="home bg-image"   
-        quality={100}
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-        }} 
-        />
+      // <Image 
+      // src="/home/bg-image.jpg" 
+      // alt="home bg-image"   
+      //   quality={100}
+      //   fill
+      //   sizes="100vw"
+      //   style={{
+      //     objectFit: "cover",
+      //   }} 
+      //   />
       <div className=" z-10  bg-purple-100  py-16 px-2  rounded-md  ">
         <div className=" flex">
           <SparklesIcon width={50} height={50} className="text-purple-900" />
