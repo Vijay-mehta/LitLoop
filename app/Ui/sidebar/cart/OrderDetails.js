@@ -22,7 +22,7 @@ const priceToRent=rentTobook.reduce((pre,curr)=>pre+curr.rentPrice,0)
     return(
         <>
      {cartData.length>0 && 
-        <div className=" bg-white shadow-md p-8 m-3">
+        <div className=" bg-white shadow-md p-8 m-3  text-black">
         <h2 className=" text-left">  Order Details</h2> 
        <ul>
         <li>Buying {buyTobook?.length} book for {priceToBuy} NIR</li>
