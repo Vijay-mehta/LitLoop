@@ -1,5 +1,4 @@
 import Image from "next/image";
-import bgImage from "../../litloop/public/home/bg-image.jpg";
 import Link from "next/link";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 export default function Home() {
