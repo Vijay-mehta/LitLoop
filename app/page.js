@@ -19,7 +19,7 @@ export default function Home() {
           <SparklesIcon width={50} height={50} className="text-purple-900" />
           <p className="text-purple-700  text-5xl  mb-6  font-serif">Litloop</p>
         </div>
-        <Link href="/store" className="  font-serif bg-purple-900 text-white  p-2 text-xl ">
+        <Link href="/store" className=" bg-purple-900 text-white  p-2 text-xl ">
           Take Me To The Store
         </Link>
       </div>
