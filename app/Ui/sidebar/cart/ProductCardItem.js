@@ -20,7 +20,8 @@ const ProductCardItem = ({ cardItemData }) => {
     <>
       <div>
         {cardItemData?.map((card) => (
-          <div>
+          <div key={card.id}>
+            {console.log("card",card)}
           <ProductCard
          
             cardItemData={card}
