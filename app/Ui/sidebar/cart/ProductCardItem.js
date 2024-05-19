@@ -20,10 +20,12 @@ const ProductCardItem = ({ cardItemData }) => {
     <>
       <div>
         {cardItemData?.map((card) => (
+          <div>
           <ProductCard
          
             cardItemData={card}
           />
+          </div>
         ))}
          <div className="mb-2">
             <ul className="font-semibold">
