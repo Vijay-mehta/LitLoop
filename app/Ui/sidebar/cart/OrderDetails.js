@@ -12,7 +12,7 @@ const OrderDetails = () => {
     <>
       {cartData.length > 0 && (
         <div >
-          <div className=" bg-white   text-black" >
+          <div className=" bg-white   text-black  " >
            <ProductCardItem cardItemData ={cartData} />
           </div>
         
