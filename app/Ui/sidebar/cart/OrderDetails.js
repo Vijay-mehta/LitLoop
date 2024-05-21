@@ -24,7 +24,7 @@ const OrderDetails = () => {
   return (
     <>
       {cartData.length > 0 && (
-        <div>
+        <div className=" text-black">
           <h1 className=" font-bold mb-3">Welcome Mr.X</h1>
           <h3 className=" font-medium  mb-4">
             Thanku a lot for your purchase. Please complete the checkout process
