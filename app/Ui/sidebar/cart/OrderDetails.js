@@ -24,13 +24,13 @@ const OrderDetails = () => {
   return (
     <>
       {cartData.length > 0 && (
-        <div className=" text-black">
+        <div >
           <h1 className=" font-bold mb-3">Welcome Mr.X</h1>
           <h3 className=" font-medium  mb-4">
             Thanku a lot for your purchase. Please complete the checkout process
             by paying for your order{" "}
           </h3>
-          <div className="mb-2   shadow-md  bg-white p-5 rounded-md">
+          <div className="mb-2   text-black shadow-md  bg-white p-5 rounded-md">
             <h1 className=" font-bold  mb-5">Order Details</h1>
             <ul className="font-semibold">
               <li className="font-normal">Buying book for {priceToBuy} NIR</li>
