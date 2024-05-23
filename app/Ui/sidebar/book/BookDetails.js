@@ -1,12 +1,13 @@
 import Image from "next/image";
 import {
   CheckCircleIcon,
-  XCircleIcon
+  XCircleIcon,
+
 } from "@heroicons/react/24/solid";
 const BookDetails = ({book}) => {
   return(
     <>
-  <div className=" flex  flex-col  text-black   items-center  p-3">
+  <div className=" flex  flex-col  bg-white text-black   items-center  p-3">
 
     
         <Image
