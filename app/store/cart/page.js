@@ -3,7 +3,7 @@ import Payment from "@/app/Ui/sidebar/cart/payment";
 
 const Cart = () => {
   return (
-    <div className=" mt-7 ml-7">
+    <div className=" mt-7 ml-0 lg:ml-7">
      
       <OrderDetails />
       <Payment />

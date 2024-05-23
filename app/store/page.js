@@ -1,9 +1,11 @@
 import BookList from '../Ui/sidebar/book/BookList'
-import {books} from '../lib/fake-data'
+import {getAllBooks} from '../lib/fake-data'
 const BookListPage =()=>{
-    
+  const books= getAllBooks()
     return(
-        <><BookList book={books}/></>
+        <>
+        <BookList book={books}/>
+        </>
     )
 }
 

@@ -6,9 +6,11 @@ import {
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import AddToCart from "./AddToCart";
+import Link from "next/link";
 
 const BookCard = ({ book }) => {
   return (
+    <Link href={`/store/${book.id}`}>
     <div className=" flex  flex-col  text-black   items-center  p-3">
                 <div className=" flex "><HeartIcon  className=" w-10  h-10   mt-2"/></div> 
 
@@ -46,6 +48,7 @@ const BookCard = ({ book }) => {
       <p className=" my-2">Rent for {book.rentPrice} INR per month </p>
       <AddToCart book={book} />
     </div>
+    </Link>
   );
 };
 

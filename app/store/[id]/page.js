@@ -1,8 +1,13 @@
+import BookCard from "@/app/Ui/sidebar/book/BookCard"
+import {getBookById} from '../../lib/fake-data'
+import BookDetails from "@/app/Ui/sidebar/book/BookDetails"
 const BookDetailsPage=( { params:{id}})=>{
-    console.log(id)
+    
+    const books = getBookById(id)
+
     return(
         <>
-        BookDetailsPage
+        <BookDetails book={books}/>
         </>
     )
 }
