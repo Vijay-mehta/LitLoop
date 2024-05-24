@@ -85,7 +85,7 @@ const books = [
     "genre": "Historical Fiction",
     "pages": 928,
     "isRented": false,
-    "stock": 15,
+    "stock": 0,
     "rentPrice": 20,
     "sellPrice": 250,
     "sold": 10,
