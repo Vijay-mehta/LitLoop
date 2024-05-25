@@ -18,7 +18,6 @@ import { storeContext } from "@/app/context";
 
 const NavLink = () => {
   const {cartData}=useContext(storeContext)
-  console.log("cartData",cartData.length)
   const links = [
     { name: "Home", href: "/", icon: HomeIcon },
     { name: "Books", href: "/store", icon: BookOpenIcon },
