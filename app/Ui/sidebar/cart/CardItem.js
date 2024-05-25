@@ -1,7 +1,6 @@
 import { TrashIcon } from "@heroicons/react/24/solid";
 
 const CardItem =({book})=>{
-    console.log("cartData",cartData)
     return(
         <div className=" bg-gray-200  m-5  p-6  rounded-md flex">
            
