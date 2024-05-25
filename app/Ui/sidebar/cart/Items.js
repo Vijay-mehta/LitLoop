@@ -6,7 +6,6 @@ import { toast } from "react-toastify";
 
 const Items = () => {
     const { cartData, setCartData } = useContext(storeContext);
-    console.log("cartData",cartData)
   const handleRemoveItem = (e, id,title) => {
     const filterData = cartData?.filter((item) => item.id !==id);
     setCartData([...filterData ]);
