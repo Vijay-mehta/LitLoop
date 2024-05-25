@@ -2,7 +2,7 @@ import { TrashIcon } from "@heroicons/react/24/solid";
 
 const CardItem =({book})=>{
     return(
-        <div className=" bg-gray-200  m-5  p-6  rounded-md flex">
+        <div className=" bg-gray-200 text-black  m-5  p-6  rounded-md flex">
            
        <div> <p className="bg-black text-white rounded-full  text-center mr-2 h-[25px] w-[30px]">{book.type ==="buy"? "B":"R" }</p></div>
       <div>  <p className=" mb-3  font-bold">{book.title}</p>
