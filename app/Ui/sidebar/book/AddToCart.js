@@ -4,16 +4,17 @@ import { toast } from "react-toastify";
 import { useContext } from "react";
 import { storeContext } from "@/app/context";
 
-const AddToCart = ({ book }) => {
+const AddToCart = ({ book}) => {
+
+  
   const { cartData, setCartData } = useContext(storeContext);
   const handleCart = (e, reason) => {
     e.preventDefault();
     const newData = { ...book, type: reason };
     setCartData([...cartData, newData]);
     toast.success(`Added ${newData.title} to the Cart`, {
-      autoClose: 900,
+      autoClose:900,
       position: "top-right",
-      className: "w-80",
     });
   };
   return (
