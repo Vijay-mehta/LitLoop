@@ -6,11 +6,16 @@ import { toast } from "react-toastify";
 
 const Items = () => {
     const { cartData, setCartData } = useContext(storeContext);
-  const handleRemoveItem = (e, id,title) => {
-    const filterData = cartData?.filter((item) => item.id !==id);
-    setCartData([...filterData ]);
-    toast.success(`remove successful ${title}`)
-  };
+    const handleRemoveItem = (e, id, title) => {
+      const index = cartData.findIndex(item => item.id === id);
+      if (index !== -1) {
+        const newCartData = [...cartData];
+        newCartData.splice(index, 1);
+        setCartData(newCartData);
+        toast.success(`Removed ${title} successfully`);
+      }
+    };
+    
   return (
     <>
     {cartData.length>0 && <><div className="  bg-white ">
