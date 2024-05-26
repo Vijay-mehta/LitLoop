@@ -12,6 +12,7 @@ import {
   ArrowLeftStartOnRectangleIcon,
   SparklesIcon,
   ShoppingCartIcon,
+  HeartIcon
 } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import { storeContext } from "@/app/context";
@@ -27,6 +28,7 @@ const NavLink = () => {
       icon: RectangleStackIcon,
     },
     {name: 'Cart', href:"/store/cart", icon: ShoppingCartIcon},
+    {name: 'Wish', href:"/store/wiselist", icon: HeartIcon},
     { name: "Track Order", href: "/store/track-order", icon: TruckIcon },
     { name: "Community", href: "/store/community", icon: UserGroupIcon },
     { name: "Settings", href: "/store/settings", icon: CogIcon },
