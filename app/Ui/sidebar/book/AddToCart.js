@@ -22,16 +22,16 @@ const AddToCart = ({ book}) => {
   };
 
   return (
-    <div className="flex">
+    <div className=" flex gap-4">
       <button 
-         className={`bg-purple-600   text-white   hover:bg-purple-700   mr-4 px-3 py-2  rounded-sm ${book.stock <= 0 ?'opacity-50 cursor-not-allowed':''} `} 
+         className={`bg-purple-600   text-white   hover:bg-purple-700    px-3 py-2  rounded-sm ${book.stock <= 0 ?'opacity-50 cursor-not-allowed':''} `} 
         onClick={(e) => handleCart(e, "buy",book.stock)}
       >
         <ShoppingCartIcon className="w-5 mr-0.5 inline" />
         to Buy
       </button>
       <button
-         className={`bg-purple-600   text-white   hover:bg-purple-700   mr-4 px-3 py-2  rounded-sm ${book.stock <= 0 ?'opacity-50 cursor-not-allowed':''} `} 
+         className={`bg-purple-600   text-white   hover:bg-purple-700    px-3 py-2  rounded-sm ${book.stock <= 0 ?'opacity-50 cursor-not-allowed':''} `} 
          onClick={(e) => handleCart(e, "rent",book.stock)}
       >
         <ShoppingCartIcon className="w-5 mr-0.5 inline" />

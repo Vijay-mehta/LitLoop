@@ -38,7 +38,7 @@ const NavLink = () => {
 
   return (
     
-    <div className="grid grid-cols-5 sm:grid-cols-none">
+    <div className="grid grid-cols-5 md:grid-cols-none">
     {links.map((link) => {
         const IconShow = link.icon;
         return (
