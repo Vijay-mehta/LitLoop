@@ -39,7 +39,7 @@ const books = [
     "genre": "Crime",
     "pages": 198,
     "isRented": true,
-    "stock": 7,
+    "stock": 0,
     "rentPrice": 15,
     "sellPrice": 120,
     "sold": 10,
