@@ -9,7 +9,7 @@ export const metadata = {
 export default function BookStoreLayout({ children }) {
   return (
     <StoreProvider>
-    <div className=" lg:flex p-2">
+    <div className=" md:flex p-2">
         <SideBar/>
       {children}
     </div>
