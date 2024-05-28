@@ -6,8 +6,9 @@ import { storeContext } from "@/app/context";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import React from "react";
+import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-
+import CheckoutForm from "@/app/Ui/CheckoutForm";
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
@@ -29,8 +30,10 @@ const Cart = () => {
             <div className=" grid  grid-cols-1 md:grid-cols-3 gap-6">
               <Items />
               <OrderDetails />
-            
-             
+              {/* <Payment /> */}
+              <Elements stripe={stripePromise}>
+                <CheckoutForm />
+              </Elements>
             </div>
           </div>
         </>
