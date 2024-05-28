@@ -6,6 +6,7 @@ import { storeContext } from "@/app/context";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import React from "react";
+import { loadStripe } from "@stripe/stripe-js";
 
 
 const stripePromise = loadStripe(
