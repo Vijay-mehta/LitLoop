@@ -6,9 +6,9 @@ import { storeContext } from "@/app/context";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import React from "react";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import CheckoutForm from "@/app/Ui/CheckoutForm";
+// import { Elements } from "@stripe/react-stripe-js";
+// import { loadStripe } from "@stripe/stripe-js";
+// import CheckoutForm from "@/app/Ui/CheckoutForm";
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
