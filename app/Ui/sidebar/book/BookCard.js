@@ -9,19 +9,14 @@ import Image from "next/image";
 import AddToCart from "./AddToCart";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import WiseList from "../WiseList";
 
 const BookCard = ({ book }) => {
-  const [wiseList, setWiseList] = useState([]);
-
-  const handleLocalWiseList = (id) => {
-    localStorage.setItem("wiseList", JSON.stringify(id));
-  };
+ 
 
   return (
     <div className=" flex flex-col">
-      <div onClick={() => handleLocalWiseList(book.id)} className=" flex  justify-center">
-        <HeartIcon className=" w-8  h-8   mt-2 " />
-      </div>
+     <WiseList wiseListData={book}/>
 
       <Link href={`/store/${book.id}`}>
         <div className=" flex  flex-col  text-black   items-center  p-3">

@@ -1,6 +1,6 @@
 const WishList=()=>{
     return(
-        <>my wishList </>
+        <><WishList/> </>
     )
 }
 
