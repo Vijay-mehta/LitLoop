@@ -31,9 +31,9 @@ const Cart = () => {
               <Items />
               <OrderDetails />
               {/* <Payment /> */}
-              <Elements stripe={stripePromise}>
-                <CheckoutForm />
-              </Elements>
+              // <Elements stripe={stripePromise}>
+                // <CheckoutForm />
+              // </Elements>
             </div>
           </div>
         </>
