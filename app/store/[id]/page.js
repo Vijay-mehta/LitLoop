@@ -1,6 +1,5 @@
-import BookCard from "@/app/Ui/sidebar/book/BookCard"
+import BookDetails from '@/app/Ui/book/BookDetails'
 import {getBookById} from '../../lib/fake-data'
-import BookDetails from "@/app/Ui/sidebar/book/BookDetails"
 const BookDetailsPage=( { params:{id}})=>{
     
     const books = getBookById(id)

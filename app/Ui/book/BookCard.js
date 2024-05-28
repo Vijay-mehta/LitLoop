@@ -8,16 +8,13 @@ import {
 import Image from "next/image";
 import AddToCart from "./AddToCart";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import WiseList from "../WiseList";
 
 const BookCard = ({ book }) => {
  
 
   return (
     <div className=" flex flex-col">
-     <WiseList wiseListData={book}/>
-
+ <HeartIcon className=" w-8  h-8   mt-2 " />
       <Link href={`/store/${book.id}`}>
         <div className=" flex  flex-col  text-black   items-center  p-3">
           <div className=" flex "></div>
