@@ -8,7 +8,7 @@ const Success=()=>{
         <div className=" bg-white shadow-lg pX-24 py-24 mt-20 w-72  rounded-md  ">
    <div className=" flex justify-around mb-2">< CheckCircleIcon className=" h-6 w-6  "/></div>
              
-        <p className="  text-center ">Order Place Successful</p>
+        <p className="  text-center ">order placed successfully</p>
         </div></div>
     )
 }
