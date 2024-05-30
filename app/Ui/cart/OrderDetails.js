@@ -18,7 +18,7 @@ const OrderDetails = () => {
     setPriceToRent(rentTobook.reduce((pre, curr) => pre + curr.rentPrice, 0));
   }, [cartData, buyTobook, rentTobook]);
 
-  const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+  const stripePromise = loadStripe("pk_test_51PKaXmSIiKxOdskAY1KDA7zCLR30fV7eQrb7ASYf7ToU7IeAOT9hAiNaEzkpZBGS5WIRlHSZB4YhpmqAsP1Qsbax001WFP6LpV");
 
   return (
     <>
