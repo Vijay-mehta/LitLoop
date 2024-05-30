@@ -2,21 +2,16 @@
 import { storeContext } from "@/app/context";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import { useContext } from "react";
-import React from "react";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import CheckoutForm from "@/app/Ui/CheckoutForm";
+
+
 import Items from "@/app/Ui/cart/Items";
 import OrderDetails from "@/app/Ui/cart/OrderDetails";
 
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-);
 
 const Cart = () => {
   const { cartData } = useContext(storeContext);
   return (
-    <>
+<>
       {cartData.length > 0 ? (
         <>
           {" "}
@@ -26,13 +21,11 @@ const Cart = () => {
               Thanku a lot for your purchase. Please complete the checkout
               process by paying for your order{" "}
             </h3>
-            <div className=" grid  grid-cols-1 md:grid-cols-3 gap-6">
+            <div className=" grid  grid-cols-1 md:grid-cols-2 gap-6">
               <Items />
               <OrderDetails />
               {/* <Payment /> */}
-              <Elements stripe={stripePromise}>
-                <CheckoutForm />
-              </Elements>
+          
             </div>
           </div>
         </>

@@ -1,12 +1,14 @@
 "use client";
 import { storeContext } from "@/app/context";
 import { useContext, useEffect, useState } from "react";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutForm from "@/app/Ui/CheckoutForm";
 
 const OrderDetails = () => {
   const { cartData } = useContext(storeContext);
   const [priceToBuy, setPriceToBuy] = useState(0);
   const [priceToRent, setPriceToRent] = useState(0);
-
 
   const buyTobook = cartData.filter((book) => {
     return book.type === "buy";
@@ -19,24 +21,43 @@ const OrderDetails = () => {
   useEffect(() => {
     setPriceToBuy(buyTobook.reduce((pre, curr) => pre + curr.sellPrice, 0));
     setPriceToRent(rentTobook.reduce((pre, curr) => pre + curr.rentPrice, 0));
-  }, [cartData,buyTobook,rentTobook]);
+  }, [cartData, buyTobook, rentTobook]);
+
+  const stripePromise = loadStripe(
+    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+  );
+  
 
   return (
     <>
       {cartData.length > 0 && (
-        <div >
-        
-          <div className="mb-2   text-black shadow-md  bg-white p-5 rounded-md">
+        <div className=" md:flex ">
+          <div className="mb-2   text-black shadow-md  bg-white p-10  rounded-md">
             <h1 className=" font-bold  mb-5">Order Details</h1>
             <ul className="font-semibold">
-             {priceToBuy ? <li className="font-normal">Buying book for {priceToBuy} NIR</li>:''}
-             {priceToRent ?   <li className="font-normal">
-                Renting book for {priceToRent} NIR
-              </li>:''}
-            
+              {priceToBuy ? (
+                <li className="font-normal">
+                  Buying book for {priceToBuy} NIR
+                </li>
+              ) : (
+                ""
+              )}
+              {priceToRent ? (
+                <li className="font-normal">
+                  Renting book for {priceToRent} NIR
+                </li>
+              ) : (
+                ""
+              )}
             </ul>
           </div>
+
+          <Elements stripe={stripePromise}>
+                <CheckoutForm priceBuy={priceToBuy} priceRent={priceToRent}/>
+              </Elements>
+             
         </div>
+        
       )}
     </>
   );

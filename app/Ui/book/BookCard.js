@@ -14,7 +14,7 @@ const BookCard = ({ book }) => {
 
   return (
     <div className=" flex flex-col">
- <HeartIcon className=" w-8  h-8   mt-2 " />
+ <div className=" flex justify-center"><HeartIcon className=" w-8  h-8   mt-2 " /></div>
       <Link href={`/store/${book.id}`}>
         <div className=" flex  flex-col  text-black   items-center  p-3">
           <div className=" flex "></div>

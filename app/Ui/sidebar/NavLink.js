@@ -12,7 +12,7 @@ import {
   ArrowLeftStartOnRectangleIcon,
   SparklesIcon,
   ShoppingCartIcon,
-  HeartIcon
+  HeartIcon,
 } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import { storeContext } from "@/app/context";
