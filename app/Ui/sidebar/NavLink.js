@@ -13,6 +13,7 @@ import {
   SparklesIcon,
   ShoppingCartIcon,
   HeartIcon,
+  ChatBubbleBottomCenterIcon
 } from "@heroicons/react/24/solid";
 import { useContext } from "react";
 import { storeContext } from "@/app/context";
@@ -32,6 +33,7 @@ const NavLink = () => {
     // { name: "Track Order", href: "/store/track-order", icon: TruckIcon },
     // { name: "Community", href: "/store/community", icon: UserGroupIcon },
     // { name: "Settings", href: "/store/settings", icon: CogIcon },
+    { name: "Contact", href: "/store/contact", icon: ChatBubbleBottomCenterIcon },
     { name: "About", href: "/store/about", icon: Squares2X2Icon },
     // { name: "Admin", href: "/store/admin", icon: CubeTransparentIcon },
   ];
