@@ -22,18 +22,18 @@ const NavLink = () => {
   const links = [
     { name: "Home", href: "/", icon: HomeIcon },
     { name: "Books", href: "/store", icon: BookOpenIcon },
-    {
-      name: "Sell or Lend",
-      href: "/store/sell-lend",
-      icon: RectangleStackIcon,
-    },
+    // {
+    //   name: "Sell or Lend",
+    //   href: "/store/sell-lend",
+    //   icon: RectangleStackIcon,
+    // },
     {name: 'Cart', href:"/store/cart", icon: ShoppingCartIcon},
     // {name: 'Wish', href:"/store/wiselist", icon: HeartIcon},
-    { name: "Track Order", href: "/store/track-order", icon: TruckIcon },
-    { name: "Community", href: "/store/community", icon: UserGroupIcon },
-    { name: "Settings", href: "/store/settings", icon: CogIcon },
+    // { name: "Track Order", href: "/store/track-order", icon: TruckIcon },
+    // { name: "Community", href: "/store/community", icon: UserGroupIcon },
+    // { name: "Settings", href: "/store/settings", icon: CogIcon },
     { name: "About", href: "/store/about", icon: Squares2X2Icon },
-    { name: "Admin", href: "/store/admin", icon: CubeTransparentIcon },
+    // { name: "Admin", href: "/store/admin", icon: CubeTransparentIcon },
   ];
 
   return (
@@ -62,11 +62,11 @@ const NavLink = () => {
        
         );
       })}
-       <form>
+       {/* <form>
         <button className="  flex m-[8px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-2 text-sm font-medium hover:bg-sky-100 hover:text-purple-600 md:flex-none md:justify-start md:px-3">
           <ArrowLeftStartOnRectangleIcon className="w-6" color="black" />
         </button>
-      </form>
+      </form> */}
     </div>
   );
 };

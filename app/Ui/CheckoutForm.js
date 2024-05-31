@@ -97,7 +97,7 @@ const CheckoutForm = ({ priceBuy, priceRent }) => {
 
   useEffect(() => {
     if (success) {
-      router.push('/success');
+      router.push('/success','_blank');
     }
   }, [success, router]);
 
